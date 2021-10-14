@@ -7,9 +7,10 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
-    "svelte": "^3.42.6",
-    "mdsvex": "^0.9.8"
+    "mdsvex": "^0.9.8",
+    "svelte": "^3.42.6"
   },
   "type": "module"
 }
