@@ -36,6 +36,9 @@ Runs the built project on http://localhost:3000.
 ```
 /src/routes/posts/ --> The folder where your posts are located.
 ```
+```
+All other directories should be in the SvelteKit docs.
+```
 
 ### Post metadata
 - "slug" is the link your post will be on ex: https://example.com/blog/my-first-post.

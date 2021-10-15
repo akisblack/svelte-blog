@@ -39,7 +39,7 @@
 		{#each articles as {slug, title, summary, published}}
 			{#if published}
 				<div class="item-div">
-					<a rel="prefetch" href="/{slug}" class="item-name">{title}</a>
+					<a rel="prefetch" href="{slug}" class="item-name">{title}</a>
 					<h2 class="item-desc">{summary}</h2>
 				</div>
 			{/if}
