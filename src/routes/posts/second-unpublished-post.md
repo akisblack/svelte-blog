@@ -2,8 +2,9 @@
 slug: second-post
 title: second post
 summary: your description
-date: "2021-08-31"
+date: "31-08-2021"
 author: your name
+published: false
 ---
 
 hello

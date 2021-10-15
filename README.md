@@ -3,6 +3,8 @@
 
 ### A blog template written in [SvelteKit](https://kit.svelte.dev) trying to not use any extra preprocessors so it can be easily adopted to real projects.
 
+---
+
 ## Developing
 
 ### Prerequisites
@@ -34,6 +36,17 @@ Runs the built project on http://localhost:3000.
 ```
 /src/routes/posts/ --> The folder where your posts are located.
 ```
+
+### Post metadata
+- "slug" is the link your post will be on ex: https://example.com/blog/my-first-post.
+
+- "title", "summary" and "author" should be self explanatory.
+
+- "date" is the date your post was published in. Nearly all date formats work.
+
+- "published" is a boolean. If true the post will display otherwise it will stay unpublished and not accessible anywhere outside the source code.
+
+---
 
 ## License
 This project is licensed under the Unlicense aka public domain.

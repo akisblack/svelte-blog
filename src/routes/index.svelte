@@ -36,11 +36,13 @@
 <div id="blog">
 	<h1>Blog</h1>
 	<div class="outer-item-div">
-		{#each articles as { slug, title, summary }}
-			<div class="item-div">
-				<a rel="prefetch" href="/{slug}" class="item-name">{title}</a>
-				<h2 class="item-desc">{summary}</h2>
-			</div>
+		{#each articles as {slug, title, summary, published}}
+			{#if published}
+				<div class="item-div">
+					<a rel="prefetch" href="/{slug}" class="item-name">{title}</a>
+					<h2 class="item-desc">{summary}</h2>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>
