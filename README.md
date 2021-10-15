@@ -1,5 +1,5 @@
 # Svelte Blog
->Live version: https://akisblack.github.io/svelte-blog
+>Live version: https://sveltekit-blog.netlify.app
 
 ### A blog template written in [SvelteKit](https://kit.svelte.dev) trying to not use any extra preprocessors so it can be easily adopted to real projects.
 
