@@ -1,7 +1,13 @@
 # Svelte Blog
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akisblack/svelte-blog/Build%20and%20Deploy?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/akisblack/svelte-blog?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/akisblack/svelte-blog?style=for-the-badge)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fsveltekit-blog.netlify.app)
+
 >Live version: https://sveltekit-blog.netlify.app
 
-### A blog template written in [SvelteKit](https://kit.svelte.dev) trying to not use any extra preprocessors so it can be easily adopted to real projects.
+### A blog template written in [SvelteKit](https://kit.svelte.dev) trying to not use more than one preprocessoror. It uses MDsveX for markdown compiling and just that.
 
 ---
 
