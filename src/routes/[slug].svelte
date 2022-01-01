@@ -6,7 +6,7 @@
 	export async function load({ page }) {
 		return {
 			props: {
-				Post: await import(`./posts/${page.params.slug}.md`)
+				Post: await import(`./_posts/${page.params.slug}.md`)
 			}
 		};
 	}
@@ -32,7 +32,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	/*styles for the articles themselves*/
 	/*
 		By default, CSS is locally scoped to the component,

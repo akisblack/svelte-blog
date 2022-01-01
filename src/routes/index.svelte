@@ -1,6 +1,6 @@
 <script context="module">
 	//get the article metadata
-	const postFiles = import.meta.glob("./posts/*.md");
+	const postFiles = import.meta.glob("./_posts/*.md");
 	let body = [];
 	for (const path in postFiles) {
 		body.push(postFiles[path]().then(({ metadata }) => metadata));
@@ -37,7 +37,7 @@
 	<h1>Posts</h1>
 	{#each posts as { slug, title, summary, published }}
 		{#if published}
-			<a rel="prefetch" href="{slug}" class="item-name">{title}</a>
+			<a rel="prefetch" href={slug} class="item-name">{title}</a>
 			<p class="item-desc">- {summary}</p>
 		{/if}
 	{/each}
