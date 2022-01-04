@@ -3,10 +3,10 @@
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
-	export async function load({ page }) {
+	export async function load({ params }) {
 		return {
 			props: {
-				Post: await import(`./_posts/${page.params.slug}.md`)
+				Post: await import(`./_posts/${params.slug}.md`)
 			}
 		};
 	}

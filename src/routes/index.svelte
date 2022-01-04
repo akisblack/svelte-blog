@@ -45,15 +45,6 @@
 
 <style>
 	/*styles for the article card*/
-	@font-face {
-		src: url(/whitney-medium-500.otf);
-		font-family: "Whitney";
-	}
-	:global(body) {
-		background-color: #0c0c0c;
-		font-family: "Whitney";
-	}
-
 	.blog {
 		padding-left: 4em;
 		padding-right: 1em;
