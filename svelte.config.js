@@ -1,17 +1,23 @@
 import { mdsvex } from "mdsvex";
-import mdsvexConfig from "./mdsvex.config.js";
-import adapter from '@sveltejs/adapter-static';
-/** @type {import('@sveltejs/kit').Config} */
+import adapter from "@sveltejs/adapter-static";
+/** @type {import("@sveltejs/kit").Config} */
+
 const config = {
-  extensions: [".svelte", ...mdsvexConfig.extensions],
+	extensions: [".svelte", ".md", ".svx"],
 
-  kit: {
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte",
-    adapter: adapter()
-  },
+	kit: {
+		adapter: adapter()
+	},
 
-  preprocess: [mdsvex(mdsvexConfig)],
+	preprocess: [
+		mdsvex({
+			extensions: [".svelte.md", ".md", ".svx"],
+
+			smartypants: {
+				dashes: "oldschool",
+			},
+		})
+	],
 };
 
 export default config;

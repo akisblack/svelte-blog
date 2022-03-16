@@ -1,16 +1,16 @@
 {
-  "name": "svelte-blog",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
-    "mdsvex": "^0.9.8",
-    "svelte": "^3.44.3"
-  },
-  "type": "module"
+	"name": "svelte-blog",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "next",
+		"@sveltejs/kit": "next",
+		"mdsvex": "^0.9.8",
+		"svelte": "^3.44.3"
+	},
+	"type": "module"
 }

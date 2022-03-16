@@ -7,7 +7,7 @@
 
 >Live version: https://sveltekit-blog.netlify.app
 
-### A blog template written in [SvelteKit](https://kit.svelte.dev) trying to not use more than one preprocessoror. It uses MDsveX for markdown compiling and just that.
+### A really bare-bones blog template written in [SvelteKit](https://kit.svelte.dev), using MDsveX.
 
 ---
 
