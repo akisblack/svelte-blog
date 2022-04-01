@@ -10,7 +10,7 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"mdsvex": "^0.9.8",
-		"svelte": "^3.44.3"
+		"svelte": "^3.46.6"
 	},
 	"type": "module"
 }
