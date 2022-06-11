@@ -13,9 +13,22 @@
 </script>
 
 <script>
-	import Readotron from "@untemps/svelte-readotron";
+	import { onMount } from 'svelte';
 	//export the post component
 	export let Post;
+
+	let article;
+	let readingTime;
+	onMount(() => {
+		readingTime = getReadingTime();
+	});
+	// https://dev.to/michaelburrows/calculate-the-estimated-reading-time-of-an-article-using-javascript-2k9l
+	function getReadingTime() {
+		let text = article.innerText;
+		let wpm = 225;
+		let words = text.trim().split(/\s+/).length;
+		return Math.ceil(words / wpm);
+	}
 </script>
 
 <svelte:head>
@@ -25,10 +38,10 @@
 <div>
 	<a href="/">Home</a>
 	<h1>{Post.metadata.title}</h1>
-	<h2>{Post.metadata.date}, by {Post.metadata.author}, <Readotron selector=".prose" /></h2>
+	<h2>{Post.metadata.date}, by {Post.metadata.author}, {readingTime} minute read</h2>
 	<hr />
 
-	<div class="prose">
+	<div class="prose" bind:this={article}>
 		<svelte:component this={Post.default} />
 	</div>
 </div>
