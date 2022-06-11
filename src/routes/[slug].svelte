@@ -13,6 +13,7 @@
 </script>
 
 <script>
+	import Readotron from "@untemps/svelte-readotron";
 	//export the post component
 	export let Post;
 </script>
@@ -24,7 +25,7 @@
 <div>
 	<a href="/">Home</a>
 	<h1>{Post.metadata.title}</h1>
-	<h2>{Post.metadata.date}, by {Post.metadata.author}</h2>
+	<h2>{Post.metadata.date}, by {Post.metadata.author}, <Readotron selector=".prose" /></h2>
 	<hr />
 
 	<div class="prose">
