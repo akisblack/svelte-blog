@@ -9,7 +9,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"mdsvex": "^0.9.8",
+		"mdsvex": "^0.10.6",
 		"svelte": "^3.44.3"
 	},
 	"type": "module"
