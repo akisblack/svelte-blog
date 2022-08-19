@@ -2,7 +2,7 @@
 slug: first-post
 title: first post
 summary: your description
-date: "29-08-2021"
+date: "2021-08-29"
 author: your name
 published: true
 ---

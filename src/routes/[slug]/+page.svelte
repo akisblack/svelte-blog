@@ -1,21 +1,10 @@
-<script context="module">
-	//get posts
-	/**
-	 * @type {import('@sveltejs/kit').Load}
-	 */
-	export async function load({ params }) {
-		return {
-			props: {
-				Post: await import(`../_posts/${params.slug}.md`)
-			}
-		};
-	}
-</script>
+
 
 <script>
 	import { onMount } from 'svelte';
 	//export the post component
-	export let Post;
+	export let data;
+	$: ({ Post } = data);
 
 	let article;
 	let readingTime;

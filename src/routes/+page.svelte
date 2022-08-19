@@ -1,23 +1,7 @@
-<script context="module">
-	//get the article metadata
-	const postFiles = import.meta.glob("../_posts/*.md");
-	let body = [];
-	for (const path in postFiles) {
-		body.push(postFiles[path]().then(({ metadata }) => metadata));
-	}
-	export async function load() {
-		const posts = await Promise.all(body);
-		return {
-			props: {
-				posts
-			}
-		};
-	}
-</script>
-
 <script>
 	// sort the articles by newest to oldest
-	export let posts;
+	export let data;
+	$: ({ posts } = data);
 	function sortByDate(a, b) {
 		const dateA = a.date;
 		const dateB = b.date;
@@ -29,13 +13,12 @@
 		}
 		return comparison * -1;
 	}
-	posts.sort(sortByDate);
 </script>
 
 <!--markup for the card. see svelte docs for more info-->
 <div>
 	<h1>Posts</h1>
-	{#each posts as { slug, title, summary, published }}
+	{#each posts.sort(sortByDate) as { slug, title, summary, published }}
 		{#if published}
 			<a rel="prefetch" href={slug}>{title}</a>
 			<p>- {summary}</p>
