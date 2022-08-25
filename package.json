@@ -7,11 +7,11 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "1.0.0-next.39",
-		"@sveltejs/kit": "^1.0.0-next.423",
+		"@sveltejs/adapter-static": "^1.0.0-next.39",
+		"@sveltejs/kit": "^1.0.0-next.437",
 		"mdsvex": "^0.10.6",
-		"svelte": "^3.44.3",
-		"vite": "^3.0.8"
+		"svelte": "^3.49.0",
+		"vite": "^3.0.9"
 	},
 	"type": "module"
 }
