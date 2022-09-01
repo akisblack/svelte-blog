@@ -6,10 +6,7 @@ const config = {
 	extensions: [".svelte", ".md"],
 
 	kit: {
-		adapter: adapter(),
-		prerender: {
-			default: true
-		}
+		adapter: adapter()
 	},
 
 	preprocess: [
